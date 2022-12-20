@@ -1,0 +1,326 @@
+/* Esercizio 1 */
+.ex-1-square{
+    transition: background-color 2s;
+}
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+/* Esercizio 2 */
+.ex-2-square{
+    transition: width 2s;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+/* Esercizio 3 */
+.ex-3-square:hover{
+    animation-name: exser;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes exser {
+    0%{
+       border-radius: 0px;
+    }
+
+    5% {
+        border-radius: 5px;
+    }
+
+    10% {
+        border-radius: 10px;
+    }
+
+    15% {
+        border-radius: 15px;
+    }
+
+    25% {
+        border-radius: 25px;
+    }
+
+    30% {
+        border-radius: 30px;
+    }
+
+    45% {
+        border-radius: 45px;
+    }
+
+    50% {
+        border-radius: 50px;
+    }
+
+    65% {
+        border-radius: 65px;
+    }
+
+    75% {
+        border-radius: 75px;
+    }
+
+    85% {
+        border-radius: 85px;
+    }
+
+    95% {
+        border-radius: 95px;
+    }
+
+    100% {
+        border-radius: 100px;
+    }
+}
+/* Esercizio 4 */
+.ex-4-square:hover{
+    animation-name: trasparent-square;
+    animation-duration: 2s;
+
+}
+
+@keyframes trasparent-square {
+    0% {
+        opacity: 100%;
+    }
+
+    5% {
+        opacity: 80%;
+    } 
+
+    10% {
+        opacity: 60%;
+    }
+
+    20% {
+       opacity: 40%;
+    }
+
+    30% {
+        opacity: 20%;
+    }
+
+    40% {
+        opacity: 10%;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Esercizio 5 CORRECT*/
+.ex-5-square {
+    transition: 1s;
+}
+.ex-5-square:hover {
+    transform: scale(2);
+}
+.ex-5-square:active {
+    transform: scale(.5);
+}
+/* Esercizio 6 */
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+/* Esercizio 7 */
+.ex-7-img {
+    transition: 2s;
+}
+.ex-7-img:hover {
+    filter: grayscale(0.6) sepia(0.5);
+}
+
+/* Esercizio 8 */
+.ex-8-img:hover{
+    animation-name: color;
+    animation-duration: 2s;
+}
+
+@keyframes color {
+    0%{
+        filter: sepia(0.0);
+        border-radius: 0px;
+    }
+
+    5% {
+        filter: sepia(0.1);
+        border-radius: 5px;
+    }
+
+    10% {
+        filter: sepia(0.2);
+        border-radius: 10px;
+    }
+
+    15% {
+        filter: sepia(0.3);
+        border-radius: 15px;
+    }
+
+    25% {
+        filter: sepia(0.4);
+        border-radius: 25px;
+    }
+
+    30% {
+        filter: sepia(0.5);
+        border-radius: 30px;
+    }
+
+    45% {
+        filter: sepia(0.6);
+        border-radius: 45px;
+    }
+
+    50% {
+        filter: sepia(0.7);
+        border-radius: 50px;
+    }
+
+    65% {
+        filter: sepia(0.8);
+        border-radius: 65px;
+    }
+}
+
+/* Esercizio 9  CORRECT */
+.ex-9-img {
+    transition: 2s;
+}
+.ex-9-img:hover {
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+/* Esercizio 10 */
+.ex-10-icon {
+    animation: rotate 1s linear infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Esercizio 11 */
+.ex-11-icon:hover {
+    animation: rotate-spid 2s linear;
+}
+
+@keyframes rotate-spid {
+    0%{
+        transform: rotate(0);
+    }
+
+    80%{
+        transform: rotate(340deg);
+    }
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: movetop-12 2s linear;
+}
+
+@keyframes movetop-12 {
+    0%{
+        left: 10px;
+    }
+
+    50%{
+        left: calc(100% - 60px);
+    }
+
+    100%{
+        left: 10px;
+    }
+} 
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: movebottom-12 2s linear;
+}
+
+@keyframes movebottom-12 {
+    0%{
+        right: 20px;
+    }
+
+    50%{
+        right: calc(100% - 60px);
+    }
+
+    100%{
+        right: 20px;
+    }
+}
+
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: movetop-13 2s linear;
+}
+@keyframes movetop-13 {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: movebottom-13 2s linear;
+}
+@keyframes movebottom-13 {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
