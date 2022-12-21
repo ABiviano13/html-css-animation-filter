@@ -264,7 +264,7 @@
     }
 }
 
-/* Esercizio 13 */
+/* Esercizio 13 CORRECT*/
 
 .ex-13-button:hover .ex-13-top-white {
     animation: movetop-13 2s linear;
